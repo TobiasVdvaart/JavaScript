@@ -1,13 +1,13 @@
 let naam_ingelogd = " "
 
-function handlelogin(){
-    let Naam = document.getElementById("Inputnaam").value; 
-    console.log("u heeft of de knop gedrukt")
+let naam_ingelog = "";
+
+function handleLogin(){
+    let naam = document.getElementById("inputNaam").value;
+    console.log("U hebt op de knop geklikt!");
     if (naam_ingelogd === ""){
-        console.log("u bent ingelogd");{
-            naam_ingelogd = Naam;
-            console.log("u bent ingelogd: " + Naam);
-            document.getElementById("inputNaam").value = "";
-        } 
+        naam_ingelogd = naam;
+        console.log("U bent ingelogd: " + naam);
+        document.getElementById("inputNaam").value = "";
     }
 }
