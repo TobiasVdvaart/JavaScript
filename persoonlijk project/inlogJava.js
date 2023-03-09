@@ -1,4 +1,4 @@
-let LoggedIn = [""];
+let LoggedIn = [];
 function getElementByName(LoggedIn, naam){
 
     return -1;
