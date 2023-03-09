@@ -1,13 +1,33 @@
-var Dranklijst = {
-    "Wijn": "3,99",
-    "Bier": "3,99",
-    "cola": "1,99",
+const Drankenlijst = 
+{
+    'Bier': 3.99,
+    'Fris': 2.99,
+    'Wijn': 3.99
 };
 
-console.log(Dranklijst)
+Rekening = 0
 
-let vraag = prompt("wat wilt u drinken? Wijn: 3,99 Bier: 3,99 Cola: 1,99")
+let vraag_01 = parseInt(prompt("Voer 1 in"));
+let aantal_drankjes = parseInt(prompt("Hoeveel drankjes wilt u?,"));
 
-if(vraag != Dranklijst) {
-    console.log("het drankje wat u wilt hebben we niet!")
+let aantal_drankjes_02 = ''
+for (let i =vraag_01; i <= aantal_drankjes; i++) {
+         aantal_drankjes_02 = prompt("Welke drankjes wilt u?, Fris: 2,99 Wijn: 3,99 Bier: 3,99");
+  }
+
+if(aantal_drankjes_02 in Drankenlijst){
+    console.log("gelukt")
 }
+
+
+
+
+if(aantal_drankjes_02 == Drankenlijst["Fris"]) {
+    Rekening + Drankenlijst['Fris']
+    console.log(Rekening)
+}
+
+
+
+
+
