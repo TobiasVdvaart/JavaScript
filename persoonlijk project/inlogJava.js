@@ -1,6 +1,13 @@
-let LoggedIn = ["tobias"];
+let LoggedIn = [""];
+function getElementByName(LoggedIn, naam){
+
+    return -1;
+}
 
 function handleLogin(){
+    console.log(LoggedIn);
+    console.log(Date())
+
     let naam = document.getElementById("inputNaam").value;
     if (naam.length <= 0){
         alert("voer een naam in!")
@@ -12,7 +19,7 @@ function handleLogin(){
         console.log(" U bent uitgelogd" + naam);
         document.getElementById("melding").innerText = "U bent uitgelogd " + naam;
     } else {
-        LoggedIn.push(naam);
+        LoggedIn.push({"de naam" : naam, "de datum": Date()});
         console.log(LoggedIn);
         document.getElementById("melding").innerText = "U bent ingelogd " + naam;
     }
@@ -20,10 +27,7 @@ function handleLogin(){
     console.log(LoggedIn)
     
 
-    // console.log("U bent ingelogd: " + naam);
-    // document.getElementById("inputNaam").value = "";
-    // document.getElementById("melding").innerText = "gelukt"; 
-
 }
 
-document.getElementById("inlogbutton").onclick = handleLogin;
+document.getElementById("inlogbutton").onclick = handleLogin;  
+
