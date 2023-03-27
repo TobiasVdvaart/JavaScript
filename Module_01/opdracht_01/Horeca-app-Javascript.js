@@ -34,18 +34,6 @@ while (true){
     }
 }
 
-let prijs_bier = Kladblok['Bier'] * Drankenlijst["Bier"]
-let prijs_fris = Kladblok['Fris']* Drankenlijst["Fris"]
-let prijs_wijn = Kladblok['Wijn'] * Drankenlijst["Wijn"]
-let totaal = prijs_bier + prijs_fris + prijs_wijn
-
-
-console.log('-------------------\n' +
-'Bier: ' +prijs_bier+ 'euro, stuks' +Kladblok["bier"][int_aantal_drank] + '\n' +
-'Fris: ' +prijs_fris+ 'euro, stuks' +Kladblok["Fris"][int_aantal_drank] + '\n' +
-'Wijn: ' +prijs_wijn+ 'euro, stuks' +Kladblok["bier"][int_aantal_drank] + '\n' +
-'totaal: ' +totaal+ 'euro\n' )
-
 
 
 
