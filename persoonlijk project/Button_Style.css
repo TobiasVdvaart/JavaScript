@@ -1,3 +1,16 @@
 body{
-    background-color: bisque;
+    background-color: antiquewhite;
 }
+
+button{
+    background-color: rgb(4, 0, 255);
+    width: 100px;
+    height: 100px;
+    
+}
+
+button:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+
