@@ -34,7 +34,17 @@ while (true){
     }
 }
 
+totaalbedrag = 0
 
+function rekening(){
+    Kladblok += '---------------' + '\n'
+
+for(let x in Kladblok){
+    prijs =  parseInt(Kladblok[x] * Drankenlijst[x])
+    totaalbedrag += prijs
+}
+
+}
 
 
 
