@@ -1,27 +1,15 @@
-let counter = 0;
-
-function Button_01() {
-    var afbeelding = document.getElementById("groote_cijfer");
-    afbeelding.src = "afbeeldingen/grote_1.png"
-    var afbeelding = document.getElementById("kleine_cijfer");
-    afbeelding.src = "afbeeldingen/kleine_1.png"
-    counter++;
+function counter(e){
+    getal = parseInt(e.innerHTML)
+    getal +=1
+    e.innerHTML = getal
 }
 
-function Button_02() {
+function Handlebutton(e) {
     var afbeelding = document.getElementById("groote_cijfer");
-    afbeelding.src = "afbeeldingen/grote_2.png"
+    console.log(e.id)
+    afbeelding.src = "afbeeldingen/grote_"+e.id+".png";
     var afbeelding = document.getElementById("kleine_cijfer");
-    afbeelding.src = "afbeeldingen/kleine_2.png"
-    counter++;
+    afbeelding.src = "afbeeldingen/kleine_"+e.id+".png";
+    counter(e)
 }
 
-function Button_03() {
-    var afbeelding = document.getElementById("groote_cijfer");
-    afbeelding.src = "afbeeldingen/grote_3.png"
-    var afbeelding = document.getElementById("kleine_cijfer");
-    afbeelding.src = "afbeeldingen/kleine_3.png"
-    counter++;
-}
-
-console.log(counter)
