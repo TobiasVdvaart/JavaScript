@@ -12,4 +12,4 @@ function Handlebutton(e) {
     afbeelding.src = "afbeeldingen/kleine_"+e.id+".png";
     counter(e)
 }
-
+document.getElementById(1).style.backgroundColor == green
