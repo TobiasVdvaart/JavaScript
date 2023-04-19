@@ -2,3 +2,13 @@
     width: 600px;
     height: 600px;
 }
+
+.kleur {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(47, 160, 47);
+    margin: 10px;
+    border-radius: 30px;
+    border-color: black;
+  }
+
