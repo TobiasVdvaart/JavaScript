@@ -12,3 +12,12 @@
     border-color: black;
   }
 
+  .kleur.green {
+    background-color: green;
+  }
+  
+  .kleur.red {
+    background-color: red;
+    color: white;
+  }
+  
